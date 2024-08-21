@@ -1,0 +1,113 @@
+.footer{
+    background-color: var(  --color-footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px !important;
+}
+
+.footer_heading{
+    /* padding: 50px 200px; */
+}
+
+.footer_links_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_heading h1{
+    font-family: var(--font-family);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: -4px;
+}
+
+.footer_button button{
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.footer_links{
+    flex: 1;
+    margin: 100px auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+
+.footer_links h4{
+    font-size: 14px;
+    font-weight: 800;
+    font-family: var(--font-family);
+}
+
+.footer_links p{
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: var(--font-family);
+    max-width: 150px;
+}
+
+
+.footer_copyright{
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--font-family);
+    color: white;
+    margin-top: 50px;
+    text-align: end;
+}
+
+@media screen and (max-width:850px){
+    .footer_heading h1{
+        font-size: 44px;
+        line-height: 52px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .footer_heading h1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .footer_links_logo img{
+        width: 150px;
+    }
+
+    .footer_links{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer_links_logo{
+        margin-bottom: 20px;
+    }
+
+    .footer_links h4{
+        font-size: 18px;
+    
+    }
+    
+
+    .footer_links p{
+        font-size: 16px;
+        max-width: 200px;
+    }
+}
